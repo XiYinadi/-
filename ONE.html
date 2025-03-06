@@ -16,16 +16,43 @@
                 <input type="text" placeholder="请输入内容"><br><br>
         
                 <label for="">选项：</label>
-                <input type="radio" name="a">一般
-                <input type="radio" name="a">还行
-                <input type="radio" name="a">帅比<br><br>
+                <input type="radio" name="a" onclick="click1_event()">一般
+                <input type="radio" name="a" onclick="click1_event()">还行
+                <input type="radio" name="a" onclick="click_event()">帅比<br><br>
         
-                <input type="submit" value="提交">
-        </div>
-        
+                <input type="submit" value="提交" onclick="click_event()" onfocus="focus_event()" onblur="blur_event()">
+            </div>
     </div>
-      <script>
+    <script>
         alert("此网站仅供娱乐，请勿用于非法用途");
+
+        let key = 0;
+ 
+        function click_event(){
+            key++;
+            console.log(key);
+            last();
+        }
+
+        function click1_event(){
+            key = 0;
+            console.log(key);
+            last();
+        }
+        function focus_event(){
+            console.log('获取焦点');
+        }
+
+        function blur_event(){
+            console.log("失去焦点");
+        }
+
+        function last(){
+            if (key >= 2)
+            alert("有点b数?");
+        }
+
+        
     </script>
     </form>
 </body>
