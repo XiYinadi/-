@@ -4,41 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>测试</title>
+    <link rel="stylesheet" href="one.css">
 </head>
-<body >
-    <div align="center">
-        <h1><strong>帅比</strong></h1>
-        <div>
+<body>
+    <div align="center" >
+        <div id="1">
+            <h1><strong>帅比</strong></h1>
             <img src="aa.jpg" alt="图片配置错误" width="500" height="">
 
             <form action="#">
                 <label for="">如何评价：</label>
-                <input type="text" placeholder="请输入内容"><br><br>
+                <input type="text" id="main" placeholder="请输入内容"><br><br>
         
                 <label for="">选项：</label>
                 <input type="radio" name="a" onclick="click1_event()">一般
                 <input type="radio" name="a" onclick="click1_event()">还行
-                <input type="radio" name="a" onclick="click_event()">帅比<br><br>
+                <input type="radio" name="a" onclick="click2_event()">帅比<br><br>
         
-                <input type="submit" value="提交" onclick="click_event()" onfocus="focus_event()" onblur="blur_event()">
-            </div>
+                <input type="submit" value="提交" onclick="click_event()"  onfocus="focus_event()" onblur="blur_event()">
+                <br><br>
+
+            </form>
+            <button onclick="getmain()">测试提交</button>
+        </div>
     </div>
-    <script>
+            
+    
+    <script >
+
         alert("此网站仅供娱乐，请勿用于非法用途");
 
         let key = 0;
  
         function click_event(){
-            key++;
+            event.preventDefault();
+            if(key == 1)
+            alert("有点B数?");
+            else if(key == 0)
+            alert("是个普通人");
             console.log(key);
-            last();
         }
 
         function click1_event(){
             key = 0;
             console.log(key);
-            last();
         }
+
+        function click2_event(){
+            key = 1;
+            console.log(key);
+            }
+
         function focus_event(){
             console.log('获取焦点');
         }
@@ -47,13 +63,10 @@
             console.log("失去焦点");
         }
 
-        function last(){
-            if (key >= 2)
-            alert("有点b数?");
-        }
+       
 
         
     </script>
-    </form>
+    <script src="script.js"></script>
 </body>
 </html>
