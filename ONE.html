@@ -10,7 +10,7 @@
     <div align="center" >
         <div id="1">
             <h1><strong>帅比</strong></h1>
-            <img src="aa.jpg" alt="图片配置错误" width="500" height="">
+            <img  id="photo" src="aa.jpg" alt="图片配置错误" width="500" >
 
             <form action="#">
                 <label for="">如何评价：</label>
@@ -21,7 +21,7 @@
                 <input type="radio" name="a" onclick="click1_event()">还行
                 <input type="radio" name="a" onclick="click2_event()">帅比<br><br>
         
-                <input type="submit" value="提交" onclick="click_event()"  onfocus="focus_event()" onblur="blur_event()">
+                <input type="submit" value="提交" onclick="getmain(); click_event(); "  onfocus="focus_event()" onblur="blur_event()">
                 <br><br>
 
             </form>
