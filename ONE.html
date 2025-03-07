@@ -10,6 +10,7 @@
     <div align="center" >
         <div id="1">
             <h1><strong>帅比</strong></h1>
+            <p>点击图片切换内容</p>
             <img  id="photo" src="aa.jpg" alt="图片配置错误" width="500" >
 
             <form action="#">
@@ -38,20 +39,20 @@
  
         function click_event(){
             event.preventDefault();
-            if(key == 1)
+            if(key == 2)
             alert("有点B数?");
-            else if(key == 0)
+            else if(key == 1)
             alert("是个普通人");
             console.log(key);
         }
 
         function click1_event(){
-            key = 0;
+            key = 1;
             console.log(key);
         }
 
         function click2_event(){
-            key = 1;
+            key = 2;
             console.log(key);
             }
 
