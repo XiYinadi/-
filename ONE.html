@@ -13,24 +13,25 @@
             <p>点击图片切换内容</p>
             <img  id="photo" src="aa.jpg" alt="图片配置错误" width="500" >
 
-            <form action="#">
-                <label for="">如何评价：</label>
-                <input type="text" id="main" placeholder="请输入内容"><br><br>
-        
-                <label for="">选项：</label>
-                <input type="radio" name="a" onclick="click1_event()">一般
-                <input type="radio" name="a" onclick="click1_event()">还行
-                <input type="radio" name="a" onclick="click2_event()">帅比<br><br>
-        
-                <input type="submit" value="提交" onclick="getmain(); click_event(); "  onfocus="focus_event()" onblur="blur_event()">
-                <br><br>
+          <div>
+            <label for="">如何评价：</label>
+            <input type="text" id="main" placeholder="请输入内容"><br><br>
+    
+            <label for="">选项：</label>
+            <input type="radio" name="a" onclick="click1_event()">一般
+            <input type="radio" name="a" onclick="click1_event()">还行
+            <input type="radio" name="a" onclick="click2_event()">帅比<br><br>
+    
+            <input type="submit" value="提交" onclick="getmain(); click_event(); submitData(); "  onfocus="focus_event()" onblur="blur_event()">
+            <br><br>
 
-            </form>
-            <button onclick="getmain()">测试提交</button>
+    
+        <button onclick="getmain()">测试提交</button>
+          </div>
         </div>
     </div>
             
-    
+    <script src="GitHub.js"></script>
     <script >
 
         alert("此网站仅供娱乐，请勿用于非法用途");
