@@ -2,7 +2,7 @@ async function submitData() {
     const input = document.getElementById('main').value;
     
     // 替换以下3个值！
-    const token = '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';      // 粘贴刚刚复制的Token
+    const token = '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';      // 粘贴刚刚复制的Token
     const repoOwner = 'XiYinadi';  // 如你的账号是 abc，就填 abc
     const repoName = '-';        // 如仓库名是 my-form-data
 
