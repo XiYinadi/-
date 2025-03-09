@@ -24,7 +24,7 @@ let aa="test.jpg";
 let bb="aa.jpg";
 
 function hide_event(){
-    photo.src = "hide_photo.jpeg";
+    photo.src = "hide_photo.jpg";
 }
 
 
